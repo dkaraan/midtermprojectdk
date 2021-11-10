@@ -27,7 +27,7 @@ import { AddIcon, DeleteIcon, StarIcon } from "@chakra-ui/icons"
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 
-const Event = () => {
+const event = () => {
     const AuthUser = useAuthUser()
     const [inputName, setInputName] = useState('')
     const [inputDate, setInputDate] = useState('')
