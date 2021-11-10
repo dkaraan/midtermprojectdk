@@ -37,7 +37,7 @@ import 'firebase/firestore'
 //importing cart and details .js files
 
 
-export const Event = () => {
+export const event = () => {
     const AuthUser = useAuthUser()
     const [inputFirstName, setInputFirstName] = useState('')
     const [inputLastName, setInputLastName] = useState('')
@@ -305,4 +305,4 @@ export const getServerSideProps = withAuthUserTokenSSR({
 export default withAuthUser({
     whenUnauthedAfterInit: AuthAction.REDIRECT_TO_LOGIN,
     whenUnauthedBeforeInit: AuthAction.REDIRECT_TO_LOGIN,
-})(Event)
+})(event)

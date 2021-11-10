@@ -176,4 +176,4 @@ export const getServerSideProps = withAuthUserTokenSSR({
 export default withAuthUser({
     whenUnauthedAfterInit: AuthAction.REDIRECT_TO_LOGIN,
     whenUnauthedBeforeInit: AuthAction.REDIRECT_TO_LOGIN,
-})(Event)
+})(event)
